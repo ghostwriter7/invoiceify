@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { UiModule } from './ui/ui.module';
+import { AppInitializerProvider } from './core/services/AppInitializerService';
 
 registerLocaleData(en);
 
@@ -28,9 +30,11 @@ registerLocaleData(en);
     AppRoutingModule,
     IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    UiModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide: NZ_I18N, useValue: en_US },
+    AppInitializerProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
