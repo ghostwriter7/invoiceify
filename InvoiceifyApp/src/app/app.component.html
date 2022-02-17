@@ -45,7 +45,7 @@
         </span>
         <nz-switch
           (ngModelChange)="onThemeToggle()"
-          [ngModel]="false"
+          [ngModel]="themeService.themeToggle$ | async"
         ></nz-switch>
       </div>
     </nz-header>

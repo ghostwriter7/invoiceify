@@ -1,11 +1,20 @@
 import { Injectable } from '@angular/core';
 import { ThemeTypes } from '../enums';
+import { StorageService } from './StorageService';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
+  private themeToggleSubject$ = new BehaviorSubject<boolean>(false);
+  public themeToggle$ = this.themeToggleSubject$.asObservable();
+
   public currentTheme = ThemeTypes.default;
+
+  constructor(
+    private readonly _storageService: StorageService
+  ) {}
 
   private reverseTheme(theme: string): ThemeTypes {
     return theme === ThemeTypes.dark ? ThemeTypes.default : ThemeTypes.dark;
@@ -25,8 +34,14 @@ export class ThemeService {
   }
 
   public loadTheme(firstLoad = true): Promise<Event> {
-    const theme = this.currentTheme;
+    let theme = this.currentTheme;
     if (firstLoad) {
+      const savedTheme = this._storageService.getItem('[invoiceify] theme');
+      theme = savedTheme ? JSON.parse(savedTheme) : this.currentTheme;
+      const state = theme === 'dark';
+
+      this.currentTheme = theme;
+      this.themeToggleSubject$.next(state);
       document.documentElement.classList.add(theme);
     }
 
@@ -55,5 +70,9 @@ export class ThemeService {
   public toggleTheme(): Promise<Event> {
     this.currentTheme = this.reverseTheme(this.currentTheme);
     return this.loadTheme(false);
+  }
+
+  public saveFavoriteTheme(): void {
+   this._storageService.setItem('[invoiceify] theme', this.currentTheme);
   }
 }
