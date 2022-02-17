@@ -10,10 +10,11 @@ export class AppComponent {
   public isCollapsed = false;
 
   constructor(
-    private readonly _themeService: ThemeService
+    public readonly themeService: ThemeService
   ) {}
 
   public onThemeToggle(): void {
-    this._themeService.toggleTheme().then();
+    this.themeService.toggleTheme().then();
+    this.themeService.saveFavoriteTheme();
   }
 }
