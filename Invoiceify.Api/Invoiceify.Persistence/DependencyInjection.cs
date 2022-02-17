@@ -7,10 +7,9 @@ namespace Invoiceify.Persistence;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddPersistence(this IServiceCollection services,IConfiguration configuration)
+    public static IServiceCollection AddPersistence(this IServiceCollection services)
     {
-        String connectionString  = configuration["ConnectionString"];
-        services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+        services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(ApplicationDbContext.GetStringConnection()));
         return services;
     }
 }
