@@ -50,4 +50,9 @@ public class UserService :IUserService
             StatusCode = HttpStatusCode.Created,
         };
     }
+
+    public bool Login(UserEntity user, string password)
+    {
+        return BC.Verify(password, user.PasswordHash);
+    }
 }
