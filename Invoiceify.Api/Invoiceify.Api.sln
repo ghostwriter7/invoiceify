@@ -4,11 +4,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoiceify.Web", "Invoiceif
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoiceify.Domain", "Invoiceify.Domain\Invoiceify.Domain.csproj", "{7D97C9DF-7C1E-44DC-8FB0-FE05E2347181}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoiceify.Test", "Invoiceify.Test\Invoiceify.Test.csproj", "{BB44E7B6-AE96-4DB6-B23E-FB7DDDD6787A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoiceify.Infrastructure", "Invoiceify.Infrastructure\Invoiceify.Infrastructure.csproj", "{512C9B5F-B2E7-4D76-96FD-C94323874593}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoiceify.Persistence", "Invoiceify.Persistence\Invoiceify.Persistence.csproj", "{75A6D94B-05D2-44D2-8984-D1B79C9434E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoiceify.Test", "Invoiceify.Test\Invoiceify.Test.csproj", "{737D2027-6092-4F17-A3CA-970747906B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +24,6 @@ Global
 		{7D97C9DF-7C1E-44DC-8FB0-FE05E2347181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D97C9DF-7C1E-44DC-8FB0-FE05E2347181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D97C9DF-7C1E-44DC-8FB0-FE05E2347181}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB44E7B6-AE96-4DB6-B23E-FB7DDDD6787A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB44E7B6-AE96-4DB6-B23E-FB7DDDD6787A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB44E7B6-AE96-4DB6-B23E-FB7DDDD6787A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB44E7B6-AE96-4DB6-B23E-FB7DDDD6787A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{512C9B5F-B2E7-4D76-96FD-C94323874593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{512C9B5F-B2E7-4D76-96FD-C94323874593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{512C9B5F-B2E7-4D76-96FD-C94323874593}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,5 +32,9 @@ Global
 		{75A6D94B-05D2-44D2-8984-D1B79C9434E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75A6D94B-05D2-44D2-8984-D1B79C9434E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75A6D94B-05D2-44D2-8984-D1B79C9434E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737D2027-6092-4F17-A3CA-970747906B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737D2027-6092-4F17-A3CA-970747906B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737D2027-6092-4F17-A3CA-970747906B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737D2027-6092-4F17-A3CA-970747906B89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
