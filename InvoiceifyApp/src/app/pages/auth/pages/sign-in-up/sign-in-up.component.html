@@ -1,0 +1,40 @@
+<nz-card
+  [nzBordered]="true"
+  [nzHoverable]="true"
+  nzTitle="Welcome to InvoicifyApp"
+  class="sign-up-wrapper">
+  <div class="sign-up-wrapper__header">
+    <h3>{{ mode === 'LOGIN' ? 'Login' : 'Sign Up' }}</h3>
+  </div>
+  <div class="sign-up-wrapper__body">
+    <form nz-form [formGroup]="form" (ngSubmit)="onSubmit()"  class="login-form" >
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your email!">
+          <nz-input-group nzPrefixIcon="user">
+            <input type="email" nz-input formControlName="email" placeholder="Type your e-mail" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input type="password" nz-input formControlName="password" placeholder="Type your password" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <div nz-row class="login-form-margin" nzJustify="center">
+        <div nz-col [nzOffset]="15" [nzSpan]="9">
+          <a class="login-form-forgot">Forgot password</a>
+        </div>
+        <div nz-col>
+          <button nz-button class="login-form-button login-form-margin" nzType="primary">
+            {{ mode === 'LOGIN' ? 'Login' : 'Sign Up' }}
+          </button>
+          or
+          <a *ngIf="mode === 'LOGIN'" routerLink="/auth/signup">register now!</a>
+          <a *ngIf="mode === 'SIGNUP'" routerLink="/auth/login">login now!</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</nz-card>

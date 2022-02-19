@@ -1,0 +1,7 @@
+C:\Users\hrozploc\Desktop\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.csproj.AssemblyReference.cache
+C:\Users\hrozploc\Desktop\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hrozploc\Desktop\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.AssemblyInfoInputs.cache
+C:\Users\hrozploc\Desktop\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.AssemblyInfo.cs
+C:\Users\hrozploc\Desktop\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.csproj.CoreCompileInputs.cache
+C:\Users\hrozploc\Desktop\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hrozploc\Desktop\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.MvcApplicationPartsAssemblyInfo.cache

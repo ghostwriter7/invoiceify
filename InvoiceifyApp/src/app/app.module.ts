@@ -15,6 +15,9 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { UiModule } from './ui/ui.module';
 import { AppInitializerProvider } from './core/services/AppInitializerService';
+import { NzNotificationService } from 'ng-zorro-antd/notification';
+import { NZ_CONFIG } from 'ng-zorro-antd/core/config';
+import { ngZorroConfig } from './core/libs';
 
 registerLocaleData(en);
 
@@ -34,7 +37,8 @@ registerLocaleData(en);
     UiModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US },
-    AppInitializerProvider],
+    AppInitializerProvider, NzNotificationService,
+    { provide: NZ_CONFIG, useValue: ngZorroConfig }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

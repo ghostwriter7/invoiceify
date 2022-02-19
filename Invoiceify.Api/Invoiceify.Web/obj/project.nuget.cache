@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ckTDk5GXlXd28ChI5HzTL7QCUs8sH2m3Rzb6o3Ir9SUbw4KY86x046dubK7lC/1iWt7mPIOfRz7VwzC56u1g+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hrozploc\\Desktop\\invoiceify\\Invoiceify.Api\\Invoiceify.Web\\Invoiceify.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hrozploc\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\hrozploc\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\hrozploc\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\hrozploc\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\hrozploc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\hrozploc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
