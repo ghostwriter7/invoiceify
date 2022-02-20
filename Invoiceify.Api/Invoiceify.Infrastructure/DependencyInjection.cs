@@ -12,7 +12,9 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IGenericRepository<ProductEntity>, GenericRepository<ProductEntity>>();
         services.AddScoped<IGenericRepository<CategoriesEntity>, GenericRepository<CategoriesEntity>>();
+        
         return services;
     }
 }

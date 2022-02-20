@@ -7,9 +7,8 @@ namespace Invoiceify.Persistence;
 
 public class ApplicationDbContext :DbContext
 {
-    public DbSet<UserEntity> Users { get; set; }
-    public DbSet<CategoriesEntity> Categories { get; set; }
-
+    public DbSet<UserEntity?> Users { get; set; }
+    
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
         
@@ -17,6 +16,7 @@ public class ApplicationDbContext :DbContext
     
     protected override void OnModelCreating(ModelBuilder builder)
     {
+        //builder.Entity<CategoriesEntity>().Property(e=>e.)
         base.OnModelCreating(builder);
     }
 

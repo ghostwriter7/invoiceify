@@ -44,21 +44,25 @@ public class AuthenticationController : Controller
     {
         var user = await _userService.GetUserByEmail(login.Email);
         if (user == null)
+        {
             return new OkObjectResult(new AuthenticateResult()
             {
                 Succeeded = false,
                 StatusCode = HttpStatusCode.NotFound,
                 Errors = new []{"User is not exist"}
             });
+        }
 
         var resultLogin = _userService.Login(user, login.Password);
         if (!resultLogin)
+        {
             return new UnauthorizedObjectResult(new AuthenticateResult()
             {
                 Succeeded = false,
                 StatusCode = HttpStatusCode.Unauthorized,
                 Errors = new []{"The login or password is not correct"},
-            });
+            });   
+        }
 
         return new OkObjectResult(new AuthenticateResult()
         {
