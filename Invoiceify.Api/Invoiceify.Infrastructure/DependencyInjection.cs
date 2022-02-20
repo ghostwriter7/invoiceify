@@ -1,5 +1,7 @@
 
+using Invoiceify.Domain.Model.Entity;
 using Invoiceify.Infrastructure.Interface;
+using Invoiceify.Infrastructure.Repository;
 using Invoiceify.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +12,7 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IGenericRepository<CategoriesEntity>, GenericRepository<CategoriesEntity>>();
         return services;
     }
 }

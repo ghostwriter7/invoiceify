@@ -14,17 +14,12 @@ C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\ref\Invoiceify.Web.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Invoiceify.Web.pdb
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\BCrypt.Net-Next.dll
-C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -76,3 +71,4 @@ C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\ref\Invoiceify.Web.dll
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.pdb
 C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\obj\Debug\net6.0\Invoiceify.Web.genruntimeconfig.cache
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll

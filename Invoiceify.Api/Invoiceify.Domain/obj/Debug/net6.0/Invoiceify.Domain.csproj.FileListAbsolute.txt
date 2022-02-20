@@ -1,0 +1,12 @@
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\bin\Debug\net6.0\Invoiceify.Domain.deps.json
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\bin\Debug\net6.0\Invoiceify.Domain.dll
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\bin\Debug\net6.0\Invoiceify.Domain.pdb
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\Invoiceify.Domain.csproj.AssemblyReference.cache
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\Invoiceify.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\Invoiceify.Domain.AssemblyInfoInputs.cache
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\Invoiceify.Domain.AssemblyInfo.cs
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\Invoiceify.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\Invoiceify.Domain.dll
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\ref\Invoiceify.Domain.dll
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\Invoiceify.Domain.pdb
+C:\Users\bszyma\RiderProjects\invoiceify\Invoiceify.Api\Invoiceify.Domain\obj\Debug\net6.0\refint\Invoiceify.Domain.dll

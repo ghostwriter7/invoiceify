@@ -7,8 +7,9 @@ namespace Invoiceify.Persistence;
 
 public class ApplicationDbContext :DbContext
 {
-    public DbSet<UserEntity?> Users { get; set; }
-    
+    public DbSet<UserEntity> Users { get; set; }
+    public DbSet<CategoriesEntity> Categories { get; set; }
+
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
         

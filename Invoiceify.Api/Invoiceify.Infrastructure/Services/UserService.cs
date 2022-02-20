@@ -42,7 +42,7 @@ public class UserService :IUserService
         user.PasswordHash = BC.HashPassword(password, user.PasswordSalt);
 
         var entityEntry = await _dbContext.Users.AddAsync(user);
-
+        
         return new IdentityResult()
         {
             Succeeded = true,
