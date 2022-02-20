@@ -36,7 +36,7 @@ public class UserService :IUserService
     {
         var userByEmailExist = await IsExistUserByEmail(user.Email);
         if (userByEmailExist)
-            return new IdentityResult() { Succeeded = false, StatusCode = HttpStatusCode.BadRequest, Errors = new[] { "User with this email already exists " } };
+            return new IdentityResult() { Succeeded = false, Errors = new[] { "User with this email already exists " } };
         
         user.PasswordSalt = BC.GenerateSalt();
         user.PasswordHash = BC.HashPassword(password, user.PasswordSalt);
@@ -47,7 +47,6 @@ public class UserService :IUserService
         {
             Succeeded = true,
             User = entityEntry.Entity,
-            StatusCode = HttpStatusCode.Created,
         };
     }
 

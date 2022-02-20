@@ -18,7 +18,7 @@ public class AuthenticationController : Controller
         _userService = userService;
     }
 
-    [HttpPost]
+    [HttpPost("Register")]
     public async Task<IActionResult> Register(RegisterViewModel register)
     {
         UserEntity user = new UserEntity()
@@ -32,7 +32,6 @@ public class AuthenticationController : Controller
             return new OkObjectResult(new AuthenticateResult()
             {
                 Token = "",
-                StatusCode = HttpStatusCode.Created,
                 User = new User() {Id = resultCreateUser.User.Id, Email = resultCreateUser.User.Email},
             });
         }
@@ -40,16 +39,16 @@ public class AuthenticationController : Controller
         return new BadRequestResult();
     }
 
+    [HttpPost("Login")]
     public async Task<IActionResult> Login(LoginViewModel login)
     {
         var user = await _userService.GetUserByEmail(login.Email);
         if (user == null)
         {
-            return new OkObjectResult(new AuthenticateResult()
+            return new NotFoundObjectResult(new AuthenticateResult()
             {
                 Succeeded = false,
-                StatusCode = HttpStatusCode.NotFound,
-                Errors = new []{"User is not exist"}
+                Errors = new[] { "User is not exist" }
             });
         }
 
@@ -59,7 +58,6 @@ public class AuthenticationController : Controller
             return new UnauthorizedObjectResult(new AuthenticateResult()
             {
                 Succeeded = false,
-                StatusCode = HttpStatusCode.Unauthorized,
                 Errors = new []{"The login or password is not correct"},
             });   
         }
@@ -72,7 +70,6 @@ public class AuthenticationController : Controller
                 Id = user.Id,
                 Email = user.Email,
             },
-            StatusCode = HttpStatusCode.OK,
         });
     }
 }

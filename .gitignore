@@ -1,0 +1,7 @@
+/Invoiceify.Api/Invoiceify.Domain/bin/
+/Invoiceify.Api/Invoiceify.Infrastructure/bin/
+/Invoiceify.Api/Invoiceify.Infrastructure/obj/
+/Invoiceify.Api/Invoiceify.Persistence/bin/
+/Invoiceify.Api/Invoiceify.Persistence/obj/
+/Invoiceify.Api/Invoiceify.Web/obj/
+/Invoiceify.Api/Invoiceify.Web/bin/

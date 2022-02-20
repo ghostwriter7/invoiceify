@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Invoiceify.Infrastructure.Repository;
 
-public abstract class GenericRepository<T> : IGenericRepository<T>  where T :Entity
+public class GenericRepository<T> : IGenericRepository<T>  where T :Entity
 {
     private readonly DbSet<T> _entities;
     private readonly ApplicationDbContext _dbContext;
