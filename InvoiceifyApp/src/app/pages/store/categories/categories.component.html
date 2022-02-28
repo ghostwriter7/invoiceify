@@ -1,3 +1,9 @@
 <app-header title="Categories" subtitle="Add, delete or edit your products categories.">
-  <button nz-button>Add category</button>
+  <button nz-button (click)="modal.showModal()">Add category</button>
 </app-header>
+
+<app-modal
+  title="Add category"
+  #modal>
+  <p>Modal works with categories!</p>
+</app-modal>

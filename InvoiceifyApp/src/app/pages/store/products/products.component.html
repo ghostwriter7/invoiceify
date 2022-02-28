@@ -1,3 +1,9 @@
 <app-header title="Products" subtitle="Manage your products. Easily add, delete or edit your stock.">
-  <button nz-button>Add product</button>
+  <button nz-button (click)="modal.showModal()">Add product</button>
 </app-header>
+
+<app-modal
+  #modal
+  title="Add product">
+  <p>Modal works with products!!!</p>
+</app-modal>

@@ -8,10 +8,13 @@ import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { HeaderComponent } from './header/header.component';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    ModalComponent
   ],
   imports: [
     NzSwitchModule,
@@ -22,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
     NzCardModule,
     NzSpinModule,
     NzPageHeaderModule,
+    NzModalModule
   ],
   exports: [
     NzSwitchModule,
@@ -32,7 +36,9 @@ import { HeaderComponent } from './header/header.component';
     NzCardModule,
     NzSpinModule,
     NzPageHeaderModule,
-    HeaderComponent
+    HeaderComponent,
+    NzModalModule,
+    ModalComponent
   ]
 })
 export class  UiModule {}
