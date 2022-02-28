@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ThemeService } from './core/services/ThemeService';
 import { AuthService } from './pages/auth/core/services';
 import { EventsService } from './core/services/EventsService';
+import { IMenu } from './core/interfaces';
+import { menuItems } from '../environments/menuItems';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,7 @@ import { EventsService } from './core/services/EventsService';
 })
 export class AppComponent implements OnInit {
   public isCollapsed = false;
+  public menu: IMenu[] = menuItems;
 
   constructor(
     public readonly themeService: ThemeService,

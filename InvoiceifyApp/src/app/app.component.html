@@ -14,23 +14,17 @@
       </a>
     </div>
     <ul nz-menu nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+      <li
+        *ngFor="let item of menu"
+        nz-submenu
+        [nzTitle]="item.module"
+        [nzIcon]="item.icon">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome">Welcome</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Monitor</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Workplace</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a>Basic Form</a>
+          <li
+            *ngFor="let subitem of item.children"
+            nz-menu-item
+            nzMatchRouter>
+            <a [routerLink]="'/' + subitem.path">{{ subitem.submodule }}</a>
           </li>
         </ul>
       </li>
