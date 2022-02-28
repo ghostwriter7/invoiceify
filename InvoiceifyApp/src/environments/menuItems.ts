@@ -2,27 +2,27 @@ import { IMenu } from '../app/core/interfaces';
 
 export const menuItems: IMenu[] = [
   {
-    module: 'Dashboard',
+    title: 'Dashboard',
     path: 'dashboard',
     icon: 'home',
     children: [
       {
-        submodule: 'Statistics',
+        title: 'Statistics',
         path: 'statistics'
       }
     ]
   },
   {
-    module: 'Store',
+    title: 'Store',
     path: 'store',
     icon: 'shop',
     children: [
       {
-        submodule: 'Categories',
+        title: 'Categories',
         path: 'categories'
       },
       {
-        submodule: 'Products',
+        title: 'Products',
         path: 'products'
       }
     ]

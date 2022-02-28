@@ -1,6 +1,6 @@
 export interface IMenu {
-  module: string;
+  title: string;
   path: string;
   icon: string;
-  children: { path: string, submodule: string }[]
+  children: { path: string, title: string }[]
 }

@@ -15,16 +15,16 @@
     </div>
     <ul nz-menu nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <li
-        *ngFor="let item of menu"
+        *ngFor="let module of menu"
         nz-submenu
-        [nzTitle]="item.module"
-        [nzIcon]="item.icon">
+        [nzTitle]="module.title"
+        [nzIcon]="module.icon">
         <ul>
           <li
-            *ngFor="let subitem of item.children"
+            *ngFor="let submodule of module.children"
             nz-menu-item
             nzMatchRouter>
-            <a [routerLink]="'/' + subitem.path">{{ subitem.submodule }}</a>
+            <a [routerLink]="'/' + module.path + '/' + submodule.path">{{ submodule.title }}</a>
           </li>
         </ul>
       </li>
