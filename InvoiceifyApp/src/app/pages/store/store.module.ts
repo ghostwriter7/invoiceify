@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { StoreRoutingModule } from './store-routing.module';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductsComponent } from './products/products.component';
+import { UiModule } from '../../ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { ProductsComponent } from './products/products.component';
   ],
   imports: [
     CommonModule,
-    StoreRoutingModule
+    StoreRoutingModule,
+    UiModule
   ],
 })
 export class StoreModule {}

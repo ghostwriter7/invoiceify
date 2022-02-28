@@ -6,8 +6,13 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
+import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
+  declarations: [
+    HeaderComponent
+  ],
   imports: [
     NzSwitchModule,
     NzFormModule,
@@ -15,7 +20,8 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
     NzButtonModule,
     NzCheckboxModule,
     NzCardModule,
-    NzSpinModule
+    NzSpinModule,
+    NzPageHeaderModule,
   ],
   exports: [
     NzSwitchModule,
@@ -24,7 +30,9 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
     NzButtonModule,
     NzCheckboxModule,
     NzCardModule,
-    NzSpinModule
+    NzSpinModule,
+    NzPageHeaderModule,
+    HeaderComponent
   ]
 })
 export class  UiModule {}
